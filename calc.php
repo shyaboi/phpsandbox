@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-
-    <form action="ste.php" method="get">
-        Name: <input type="text" name="name">
-        <input type="submit">
+    <form action="calc.php" method="GET">
+        <input type="number" name="num1">
         <br>
-        <input type="text" name="age">
+        <input type="number" name="num2">
         <input type="submit">
-    </form>
-    <br>
-    <?php
-    echo $_GET["name"]
-    ?>
-    <br>
-    your age is  <?php echo $_GET["age"] ?>
-</body>
 
+
+    </form>
+    <?php
+    echo $_GET["num1"] + $_GET["num2"]
+    ?>
+</body>
 </html>
